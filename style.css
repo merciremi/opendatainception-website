@@ -1,0 +1,27 @@
+.navbar {
+    background: #FFFFFF;
+}
+
+.navbar-default .navbar-brand {
+    color: #6C7A89;
+    font-size: 150%;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #F64747;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-default .navbar-form .navbar-left {
+    color: #6C7A89;
+    float: right;
+}
+
+.navbar-default .navbar-form .navbar-left:hover {
+    color: #F64747;
+}

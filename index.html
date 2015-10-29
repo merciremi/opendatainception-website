@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Open Data Inception - A Comprehensive List of 1600+ Open Data Portals in the World</title>
+    <meta name="description" content="For all Open Data geeks out there, we set up a comprehensive list of all open data portals around the world. Check it out!" />
+    <meta name="keywords" content="open data, open data portal, open data solution, free data" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ods-widgets.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!------------>
+<!-- Nav -----> 
+<!------------>
+   
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            
+<!-- Brand and toggle get grouped for better mobile display -->
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand" href="#">Open Data Inception</a>
+            </div>  
+            
+<!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search for Countries">
+                     </div>
+                    <button type="submit" class="btn btn-default">Gimme results!</button>
+                </form>
+            </div><!-- navbar collapse -->
+        </div><!-- container fluid --> 
+    </nav>
+
+
+<!------------>
+<!-- BODY ----> 
+<!------------>
+
+<body>
+
+<div class="container-fluid" ng-app="ods-widgets">
+ 
+    <ods-dataset-context  context="opendatasources" 
+                opendatasources-domain="public.opendatasoft.com"
+                opendatasources-dataset="open-data-sources" opendatasources-parameters="{}">
+
+        <ods-map context="opendatasources" 
+            location="2,37.63435,-0.07368" 
+            basemap="mapbox.light">
+        </ods-map>
+
+    </ods-dataset-context>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-sanitize.min.js"></script>
+<script type="text/javascript" src="https://opendatasoft.github.io/ods-widgets/dist/ods-widgets.js"></script>
+
+</body>
+</html>

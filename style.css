@@ -1,22 +1,49 @@
-@font-face {
-    font-family: 'Roboto', sans-serif;
+@media (max-width: 699px) {
+  html {
+    font-size: 18px;
+  }
 }
+@media (min-width: 700px) and (max-width: 1299px) {
+  html {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1300px) {
+  html {
+    font-size: 26px;
+  }
 
 html {
     width: 100%; 
     height: 100%;
     text-align: center;
+    background-color: #fff;
+    color: #1b6698;
+}
+                       
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body > .container-fluid {
+    padding-right:0px;
+    padding-left:0px;
+    padding-top: 50px;
 }
 
 .navbar {
-    background: #2c3f56;
+    background: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
 }
 
 .navbar-default .navbar-brand {
-    color: #fff;
-    font-size: 150%;
-    text-transform: uppercase;
-    font-weight: bolder;
+    color: #1b6698;
+    font-size: 20px;
 }
 
 .navbar-default .navbar-brand:hover {
@@ -28,10 +55,11 @@ html {
 }
 
 .navbar-default .navbar-form .navbar-right {
-    color: #fff;
+    color: #1b6698;
     float: right;
 }
 
 .navbar-default .navbar-form .navbar-right:hover {
     color: #ec643c;
 }
+

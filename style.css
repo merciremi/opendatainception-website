@@ -18,7 +18,7 @@ html {
     height: 100%;
     text-align: center;
     background-color: #fff;
-    color: #1b6698;
+    color: #EF4836;
 }
                        
 body {
@@ -27,9 +27,10 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+
 }
 
-body > .container-fluid {
+body .container-fluid:nth-child(2) {
     padding-right:0px;
     padding-left:0px;
     padding-top: 50px;
@@ -38,24 +39,24 @@ body > .container-fluid {
 .navbar {
     background: #fff;
     font-family: 'Roboto Slab', serif;
-    font-weight: bold;
 }
 
 .navbar-default .navbar-brand {
-    color: #1b6698;
+    color: #EF4836;
     font-size: 20px;
+    font-weight: bold;
 }
 
-.navbar-default .navbar-brand:hover {
-    color: #ec643c;
+.navbar-default .navbar-nav > li > a {
+    color: #777;
 }
 
-.navbar-nav {
-    float: right;
+.navbar-default .navbar-nav > li > a:hover {
+    color: #EF4836;
 }
 
 .navbar-default .navbar-form .navbar-right {
-    color: #1b6698;
+    color: #EF4836;
     float: right;
 }
 
@@ -63,3 +64,42 @@ body > .container-fluid {
     color: #ec643c;
 }
 
+#ods-search {
+    padding-top: 12px;
+    padding-right: 20px;
+
+}
+
+#ods-search .searchbox {
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #EF4836;
+
+}
+
+#ods-search button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 10px; 
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 0px;
+    background: #EF4836;
+}
+
+#ods-search button, textarea {
+    color: white;
+}
+
+#ods-search input {
+    text-align: center;
+}
+/* Hides Angular Magic in Tooltip */
+
+.ng-cloak { 
+   display: none; 
+}

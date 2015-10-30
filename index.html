@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="ods-widgets.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body ng-app="ods-widgets">
+
+    <ods-dataset-context  context="opendatasources" 
+                opendatasources-domain="public.opendatasoft.com"
+                opendatasources-dataset="open-data-sources" opendatasources-parameters="{}">
 
 <!------------>
 <!-- Nav -----> 
@@ -30,18 +34,28 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <a class="navbar-brand" href="#">Open Data Inception</a>
+                <a class="navbar-brand" href="#">Open Data Inception - 1600+ Open Data Portals Around the World</a>
             </div>  
             
 <!-- Collect the nav links, forms, and other content for toggling -->
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="ods-search">
+                        <ods-text-search
+                        placeholder="Belgium, Canada, Paris, New-York, etc."
+                        context="opendatasources">
+                        </ods-text-search>
+                    </li>
+                    <li><a href="https://opendatasoft.com" target="_blank" alt="OpenDataSoft, open data solution for cities, territories and companies">About</a></li>
+                </ul>
+                <!--
                 <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
+                     <div class="form-group">
                     <input type="text" class="form-control" placeholder="Search for Countries">
                      </div>
                     <button type="submit" class="btn btn-default">Gimme results!</button>
-                </form>
+                </form> -->
             </div><!-- navbar collapse -->
         </div><!-- container fluid --> 
     </nav>
@@ -51,24 +65,16 @@
 <!-- BODY ----> 
 <!------------>
 
-<body>
 
-<div class="container-fluid" ng-app="ods-widgets">
- 
-    <ods-dataset-context  context="opendatasources" 
-                opendatasources-domain="public.opendatasoft.com"
-                opendatasources-dataset="open-data-sources" opendatasources-parameters="{}">
+<div class="container-fluid">
 
         <ods-map context="opendatasources" 
             location="2,37.63435,-0.07368" 
             basemap="mapbox.light"
             auto-resize="true"
-            toolbarGeolocation="false"
-            toolbarDrawing="false"
-            toolbarFullscreen="false">
+            toolbar-geolocation="false"
+            toolbar-fullscreen="false">
         </ods-map>
-
-    </ods-dataset-context>
   </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -89,6 +95,6 @@
         })
     });
 </script>
-
+</ods-dataset-context>
 </body>
 </html>

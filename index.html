@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>    
     <title>Open Data Inception - A Comprehensive List of 1600+ Open Data Portals in the World</title>
     <meta name="description" content="For all Open Data geeks out there, we set up a comprehensive list of all open data portals around the world. Check it out!" />
     <meta name="keywords" content="open data, open data portal, open data solution, free data" />
@@ -60,7 +61,11 @@
 
         <ods-map context="opendatasources" 
             location="2,37.63435,-0.07368" 
-            basemap="mapbox.light">
+            basemap="mapbox.light"
+            auto-resize="true"
+            toolbarGeolocation="false"
+            toolbarDrawing="false"
+            toolbarFullscreen="false">
         </ods-map>
 
     </ods-dataset-context>
@@ -70,6 +75,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-sanitize.min.js"></script>
 <script type="text/javascript" src="https://opendatasoft.github.io/ods-widgets/dist/ods-widgets.js"></script>
+
+<script type="text/javascript">
+    var ods = angular.module('ods-widgets');
+    ods.config(function (ODSWidgetsConfigProvider, ModuleLazyLoaderProvider) {
+        ODSWidgetsConfigProvider.setConfig({
+            basemaps: [{
+                "provider": "mapbox.light",
+                "mapbox_access_token": "pk.eyJ1IjoiamVyZW15bW9yZWwiLCJhIjoiZmZjZGMxNzUwZTJjYmQ5YmIwYjAzOTFjYWNlY2ExYTAifQ.wEKnZyKpqqSzWew8QEzCtg",
+                "id": "mapbox.light",
+                "label": "MapQuest"
+            }]
+        })
+    });
+</script>
 
 </body>
 </html>

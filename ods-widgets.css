@@ -209,10 +209,13 @@
 .odswidget-map {
   position: relative;
   min-height: 400px;
+  width: 100%;
 }
 .odswidget-map > .map {
   height: 100%;
   min-height: 400px;
+    width: 100%;
+
 }
 .odswidget-map > .overlay-footer {
   vertical-align: bottom;

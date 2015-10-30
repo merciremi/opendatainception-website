@@ -36,6 +36,17 @@ body .container-fluid:nth-child(2) {
     font-weight: bold;
 }
 
+.navbar-nav > ul {
+    text-align: center;
+        margin-left: auto; 
+        margin-right: auto;
+}
+
+.navbar-nav > li {
+    text-align: center;
+        margin-left: auto; 
+        margin-right: auto;
+}
 .navbar-default .navbar-nav > li > a {
     color: #777;
     padding-right: 20px;
@@ -142,4 +153,15 @@ body .container-fluid:nth-child(2) {
 
 .ng-cloak { 
    display: none; 
+}
+
+footer  {
+    border-top: 1px solid #e7e7e7;
+    padding: 1em;
+}
+footer a {
+    color: #EF4836;
+}
+footer a:hover {
+    color: #5e5e5e;
 }

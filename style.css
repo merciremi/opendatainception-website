@@ -21,7 +21,6 @@ body .container-fluid:nth-child(2) {
     padding-right:0px;
     padding-left:0px;
     padding-top: 50px;
-
 }
 
 /* NAVIGATION */
@@ -70,19 +69,16 @@ body .container-fluid:nth-child(2) {
 
 /* NAVBAR MEDIA QUERIES */
 
-@media (max-width: 670px) {
-    .navbar-default .navbar-brand {
-        margin-bottom: 40px;
+/* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+    .navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {float:none;}
     }
-}
-
-@media (min-width: 671px) and (max-width: 1035px) {
-    #header {
-        text-align: center;
-        margin-left: auto; 
-        margin-right: auto;
-    }   
-}
 
 /* SEARCH BOX */
 
@@ -95,6 +91,7 @@ body .container-fluid:nth-child(2) {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
+    width: 30em;
     border: 1px solid #EF4836;
 }
 
@@ -119,9 +116,17 @@ body .container-fluid:nth-child(2) {
 
 /* SEARCH BOX MEDIA QUERIES */
 
+/* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+        #ods-search .searchbox {
+            width: 15em;
+        }
+    }
 
-@media (max-width: 1035px) {
-    .nav.navbar-nav.navbar-right {
+/* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        
+        .nav.navbar-nav.navbar-right {
         position: relative;
         width: 100%;
         margin: 0;
@@ -136,18 +141,7 @@ body .container-fluid:nth-child(2) {
     #ods-search .searchbox {
         width: calc(100% - 100px);
     }
-}
-
-@media (min-width: 1036px) and (max-width: 1209px) {
-     #ods-search .searchbox {
-        width: 20em;
     }
-}
-@media (min-width: 1210px) {
-    #ods-search .searchbox {
-        width: 30em;
-    }
-}
 
 /* Hides Angular Magic in Tooltip */
 
@@ -164,7 +158,7 @@ footer  {
     left:0;
     border-top: 1px solid #e7e7e7;
     padding: 1em;
-    z-index: 100;
+    z-index: 1500;
 }
 footer a {
     color: #EF4836;

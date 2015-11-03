@@ -9,8 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="/vendor/font-awesome.min.css">
-    <link rel="stylesheet" href="/ods-widgets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/ods-widgets/ods-widgets.css">
     <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -38,7 +38,7 @@
             <div class="nav navbar-nav navbar-right">
                     <li id="ods-search">
                         <ods-text-search
-                        placeholder="Belgium, Canada, Paris, New-York, etc."
+                        placeholder="Belgium, United Nations, Paris, New York, etc."
                         context="opendatasources">
                         </ods-text-search>
                     </li>
@@ -58,7 +58,7 @@
             location="2,37.63435,-0.07368" 
             basemap="mapbox.light"
             auto-resize="true"
-            noRefit="true"
+            max-zoom=8
             toolbar-geolocation="false"
             toolbar-fullscreen="false">
         </ods-map>
@@ -68,7 +68,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-sanitize.min.js"></script>
-<script type="text/javascript" src="https://opendatasoft.github.io/ods-widgets/dist/ods-widgets.js"></script>
+<script type="text/javascript" src="/vendor/ods-widgets/ods-widgets.js"></script>
 <script type="text/javascript">
     var ods = angular.module('ods-widgets');
     ods.config(function (ODSWidgetsConfigProvider, ModuleLazyLoaderProvider) {
@@ -87,7 +87,7 @@
             <a href="https://www.opendatasoft.com/a-comprehensive-list-of-all-open-data-portals-around-the-world/" 
            target="_blank" 
            alt="OpenDataSoft, open data solution for cities, territories and companies">
-            A map made by OpenDataSoft
+            <strong>An Open Data census made by OpenDataSoft</strong>
         </a>
     </footer>
 </body>

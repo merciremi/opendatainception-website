@@ -149,6 +149,8 @@ body .container-fluid:nth-child(2) {
    display: none; 
 }
 
+/* Footer */
+
 footer  {
     background:#fff;
     width:100%;
@@ -169,4 +171,12 @@ footer a:hover {
     text-decoration: none;
 }
 
+/* Leaflet Controlers */
 
+.leaflet-control-scale {
+    bottom: 50px !important;
+	}
+
+.leaflet-control-attribution {
+    bottom: 50px !important;
+}

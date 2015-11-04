@@ -170,6 +170,12 @@ footer a {
     color: #EF4836;
     margin-bottom: 5px;
 }
+
+footer p {
+    color: #EF4836;
+    margin-bottom: 5px;
+}
+
 footer a:hover {
     color: #5e5e5e;
     text-decoration: none;

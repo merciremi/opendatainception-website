@@ -149,6 +149,10 @@ body .container-fluid:nth-child(2) {
    display: none; 
 }
 
+.ng-leaflet-tooltip-cloak { 
+    display: none;
+}
+
 /* Footer */
 
 footer  {
@@ -179,4 +183,8 @@ footer a:hover {
 
 .leaflet-control-attribution {
     bottom: 50px !important;
+}
+
+.cluster-marker-circle {   
+    box-sizing: content-box; 
 }

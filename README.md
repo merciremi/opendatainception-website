@@ -1,4 +1,4 @@
-# opendatainception-website
+# opendatainception.io
 
 opendatainception.io is a map listing every Open Data portals around the world. 
 
